@@ -55,7 +55,7 @@ function App() {
       <ul className="workout-list">
         {workouts[currentDay].map((workout) => (
           <li key={workout.name} className="workout-item">
-            <div className="workout-label">
+            <label className="workout-label">
               <input
                 type="checkbox"
                 className="workout-checkbox"
@@ -66,7 +66,7 @@ function App() {
                 <div className="workout-name">{workout.name}</div>
                 <div className="workout-sets">{workout.sets}</div>
               </div>
-            </div>
+            </label>
           </li>
         ))}
       </ul>

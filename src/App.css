@@ -1,0 +1,113 @@
+body,
+html {
+  overflow: hidden;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4; /* Consistent beige background */
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  min-height: 100vh; /* Ensure full height coverage */
+  padding-bottom: 100px;
+}
+
+h1 {
+  color: #333;
+}
+
+.routine-day {
+  margin-bottom: 30px;
+}
+
+.workout-list {
+  list-style: none;
+  padding: 0;
+}
+
+.workout-item {
+  margin-bottom: 15px;
+}
+
+.workout-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-align: left; /* Align text to the left inside the label */
+}
+
+.workout-details {
+  margin-left: 20px; /* Adjust as needed */
+  flex-grow: 1; /* Let the details take up the remaining space */
+}
+
+.workout-name {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  text-align: left; /* Center the workout name */
+}
+
+.workout-sets {
+  font-size: 14px;
+  color: #555;
+  text-align: left; /* Center the sets */
+}
+
+.workout-checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+  transform: scale(2); /* Makes the checkbox larger */
+}
+
+.navigation-button {
+  position: fixed; /* Fix the position on the screen */
+  bottom: 220px; /* Position it above the stopwatch, adjust this value as needed */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Adjust horizontal centering */
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  z-index: 10; /* Ensure it's above other content */
+}
+.stopwatch-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navigation-button:hover,
+.stopwatch-button:hover {
+  background-color: #0056b3; /* Darken color on hover */
+}
+
+.stopwatch {
+  position: fixed; /* Fix the position to the bottom */
+  bottom: 0; /* Position at the bottom of the screen */
+  left: 0;
+  width: 100%; /* Take full width */
+  background-color: #f4f4f4; /* Match the app background color */
+  padding: 35px 0; /* Add some padding */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow at the top */
+  text-align: center; /* Center the content */
+}
+
+.stopwatch-timer {
+  font-size: 36px; /* Increase font size */
+  margin-bottom: 20px;
+}
